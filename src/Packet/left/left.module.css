@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 100vw;
+}
+.leftside {
+  width: 44vw;
+}
+.contentContainer {
+  max-height: 100vh;
+  width: 20rem;
+  height: 8rem;
+  overflow: hidden;
+}
+.pockNotes {
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  left: 2rem;
+  top: 1.3rem;
+}
+.createBtn:hover {
+  background-color: #1a1919;
+}
+.createBtn {
+  width: 15rem;
+  height: 2.2rem;
+  font-size: 1.2rem;
+  position: relative;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  left: 3rem;
+  top: 3rem;
+}
+.grp1 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  height: 9vh;
+  margin-bottom: -12px;
+}
+.groups {
+  margin-left: 1rem;
+  overflow: scroll;
+  width: 45vw;
+}
+.groups::-webkit-scrollbar {
+  width: 5.8px;
+}
+.groups::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.groupColor {
+    width: 3vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white; 
+  }
+  
+  .note1 {
+    font-size: 1rem;
+    margin-top: .7rem;
+    font-weight: 500;
+  }
+
+  .selectedGroup{
+    background-color: #F7ECDC;
+    width: calc(100%-6rem);
+    height: 10vh;
+    position: relative;
+    border-radius: 2rem;
+
+  }
+
+  .selectedGroup .groupColor{
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .selectedGroup .note1{
+     margin-left: 6.5rem;
+    position: relative;
+    bottom: 3rem;
+    z-index: 2;
+  }
+  
+  body .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); /* Adjust the opacity (0.5) as needed */
+    z-index: 999; 
+  }
+
+@media (max-width: 900px) {
+  .leftSide {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+  }
+  .groups {
+    margin-left: 1rem;
+    height: 100vh;
+    width: 80vw;
+  }
+  .groupColor {
+    width: 14vw;
+    height: 3.5rem;
+  }
+  .note1 {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 900px) {
+    .leftSide {
+      width: 300px;
+    }
+  }
+}
